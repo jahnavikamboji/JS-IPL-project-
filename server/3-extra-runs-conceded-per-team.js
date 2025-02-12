@@ -22,7 +22,7 @@ csvToJson()
             return acc;
          }, {});
          //console.log(matchIds);
-         //console.log(extraRunsPerTeam2016); 
+         console.log(extraRunsPerTeam2016); 
         fs.writeFileSync("../public/output/3-extra-runs-conceded-per-team.json", JSON.stringify(extraRunsPerTeam2016,null,2));
          
       });
