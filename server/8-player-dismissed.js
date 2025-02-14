@@ -1,8 +1,7 @@
 const csvToJson = require("csvtojson");
 const fs= require("fs");
-const path = require("path");
 
-const deliveriesFilePath = path.join(__dirname, "../Data/deliveries.csv");
+const deliveriesFilePath = "../Data/deliveries.csv";
 //Find the highest number of times one player has been dismissed by another player.
 function playerDismissed(){
     let dismissed = {};

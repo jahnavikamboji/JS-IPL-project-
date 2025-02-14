@@ -1,9 +1,7 @@
 const csvToJson = require("csvtojson");
 const fs= require("fs");
-const path = require("path");
 
-const matchesFilePath = path.join("../Data/matches.csv");
-
+const matchesFilePath = "../Data/matches.csv";
 //Find the number of times each team won the toss and also won the match
 function tossAndMatchWinner(){
 csvToJson()

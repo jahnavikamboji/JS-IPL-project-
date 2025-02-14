@@ -1,9 +1,7 @@
 const csvToJson = require("csvtojson");
 const fs= require("fs");
-const path = require("path");
 
-
-const deliveriesFilePath = path.join("../Data/deliveries.csv");
+const deliveriesFilePath = "../Data/deliveries.csv";
 //Find the bowler with the best economy in super overs.
 function superOverDeliveries(){
     let bowlers = {};

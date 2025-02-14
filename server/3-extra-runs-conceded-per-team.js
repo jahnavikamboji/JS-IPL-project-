@@ -1,9 +1,8 @@
 const csvToJson = require("csvtojson");
 const fs= require("fs");
-const path = require("path");
 
-const matchesFilePath = path.join("../Data/matches.csv");
-const deliveriesFilePath = path.join("../Data/deliveries.csv");
+const matchesFilePath = "../Data/matches.csv";
+const deliveriesFilePath ="../Data/deliveries.csv";
 //Extra runs conceded per team in the year 2016.
 function extraRunsConceded(){
 csvToJson()

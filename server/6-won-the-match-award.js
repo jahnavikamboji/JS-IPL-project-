@@ -1,8 +1,7 @@
 const csvToJson = require("csvtojson");
 const fs= require("fs");
-const path = require("path");
 
-const matchesFilePath = path.join("../Data/matches.csv");
+const matchesFilePath = "../Data/matches.csv";
 //Find a player who has won the highest number of Player of the Match awards for each season.
 function wonTheMatchAwards(){
     let playerAwards = {};
