@@ -1,9 +1,8 @@
 const csvToJson = require("csvtojson");
 const fs= require("fs");
-const path = require("path");
 
-const matchesFilePath = path.join ("../Data/matches.csv");
-const deliveriesFilePath = path.join("../Data/deliveries.csv");
+const matchesFilePath = "../Data/matches.csv";
+const deliveriesFilePath = "../Data/deliveries.csv";
 //Top 10 economical bowlers in the year 2015.
 function top10EconomicalBowler(){
     let bowlersData = {};

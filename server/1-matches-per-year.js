@@ -1,6 +1,6 @@
 const csvToJson = require("csvtojson");
 const fs= require("fs");
-const path = require("path");
+
 //Number of matches played per year for all the years in IPL.
 csvToJson().fromFile("../Data/matches.csv").then((matches) => {
     function matchesPerYear(matches){
