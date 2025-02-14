@@ -8,15 +8,16 @@ const matchesFilePath = path.join("../Data/matches.csv");
 function tossAndMatchWinner(){
 csvToJson()
   .fromFile(matchesFilePath).then((matches) => {
-    let tossMatchWins = {};
-    for (let match of matches){
-        if(match.toss_winner === match.winner){
-          let team = match.winner;
-          tossMatchWins[team] = (tossMatchWins[team] || 0) + 1; 
-        }
-    }
+    let tossMatchWins = matches.reduce((acc, match) => {
+      if (match.toss_winner === match.winner) {
+        acc[match.winner] = (acc[match.winner] || 0) + 1;
+      }
+      return acc;
+    }, {});
+  
     console.log(tossMatchWins);
      fs.writeFileSync("../public/output/5-toss-and-match-winner.json", JSON.stringify(tossMatchWins));
   });
 }
 tossAndMatchWinner();
+

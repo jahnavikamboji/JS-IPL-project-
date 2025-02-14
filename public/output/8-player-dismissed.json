@@ -1,1 +1,5 @@
-{"MS Dhoni":{"Z Khan":7}}
+{
+  "mostDismissed": 7,
+  "topBowler": "Z Khan",
+  "topBatter": "MS Dhoni"
+}
